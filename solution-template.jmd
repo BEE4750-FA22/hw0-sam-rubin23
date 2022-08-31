@@ -1,6 +1,6 @@
 ---
 title: "BEE 4750/5750 Homework 0"
-author: "Your name here (your netID here)"
+author: "Samantha Rubin (sfr46)"
 date: `j import Dates; Dates.Date(Dates.now())`
 weave_options:
   term: true
@@ -19,11 +19,24 @@ Pkg.instantiate()
 # Problem 1
 
 ## Problem 1.1
+```julia
+
+function square_number(x)
+  output = x*x
+  return output
+end
+```
 
 ## Problem 1.2
+The function says that $ 5^2 $ = `j square_number(5)`
 
 ## Problem 1.3
+```julia
+using Plots
+x= LinRange(-10,10,100)
+plot(x, square_number(x))   # problem: trying to pass a vector to square_number
 
+```
 # Problem 2
 
 ## Problem 2.1
